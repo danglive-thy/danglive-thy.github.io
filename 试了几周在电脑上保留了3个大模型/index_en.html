@@ -86,7 +86,7 @@ html
        <div class="rich_media_content js_underline_content autoTypeSetting24psection" id="js_content">
         <section>
          <span leaf="">
-          Since DeepSeek made it possible to deploy LLMs locally, I started trying to deploy them locally using Ollama. I have to say, commands like "ollama run qwen3:14b" are already extremely simple. Ollama directly downloads the model files, and then you can immediately enter a conversation state.
+          Since DeepSeek made it possible to deploy LLMs locally, I started trying to deploy them locally using Ollama. I have to say, commands like "ollama run qwen3:14b" are now incredibly simple. Ollama directly downloads the model files, and then you can immediately enter a conversation state.
          </span>
          <span leaf="">
           <br/>
@@ -95,7 +95,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          My computer was self-assembled in the second half of 2021. At that time, it was a period when graphics cards were particularly expensive, so I initially used a 1060 GPU. After waiting for a while, I upgraded to a 3080 Ti 12GB. Now, there's no need to replace the graphics card for testing LLMs, since high-memory GPUs are still quite expensive.
+          My computer was self-assembled in the second half of 2021. At that time, it was a period when graphics cards were especially expensive, so I initially used a 1060 GPU. After waiting for a while, I upgraded to a 3080 Ti 12GB. Now, there's no need to replace the graphics card for testing LLMs, since high-memory GPUs are still quite expensive.
          </span>
          <span leaf="">
           <br/>
@@ -104,7 +104,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          Fortunately, the competition among large model vendors is intense, making non-full-blooded models increasingly friendly for deployment on consumer-grade GPUs. Recently, I have mainly tried deploying several models locally:
+          Fortunately, the competition among large model providers is intense, making non-full-blooded models increasingly friendly for deployment on consumer-grade GPUs. Recently, I have mainly tried deploying several models locally:
          </span>
          <span leaf="">
           <br/>
@@ -140,7 +140,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          qwen3:14b
+          Qwen3:14B
          </span>
          <span leaf="">
           <br/>
@@ -149,7 +149,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          After trying it out, the 32b model itself is around 20GB in size, which is extremely demanding on this 12GB GPU. It uses up all the VRAM, and the output token speed is simply too slow.
+          After trying it out, the 32b model itself is about 20GB in size, which is very demanding on a 12GB GPU. It completely fills up the GPU memory, and the output token speed is simply too slow.
          </span>
          <span leaf="">
           <br/>
@@ -158,7 +158,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          Therefore, the model files with parameter scales of 12b and 14b are retained. Generally, such model files are about 9GB in size. They are respectively:
+          Therefore, the models that retain parameters 12b and 14b generally have a file size of around 9GB. They are respectively:
          </span>
          <span leaf="">
           <br/>
@@ -190,7 +190,7 @@ html
         </section>
         <section>
          <span leaf="">
-          From the perspective of running speed, the fastest is qwen3:14b, whose GPU utilization is significantly ahead of others, reaching over 90%. Moreover, it is a model that combines both inference and non-inference functions, making it distinctive. When inference is not needed, simply adding "/no_think" in the conversation will make the response more concise and straightforward. When calling the API, although it still outputs a pair of empty "think" tags, some processing of the returned string is required, its responses are already quite easy to handle in subsequent processing.
+          In terms of running speed, the fastest model is qwen3:14b, which significantly outperforms others in GPU utilization, reaching over 90%. Additionally, it is a unified model for both inference and non-inference tasks, offering a unique feature. When inference is not needed, simply adding "/no_think" in the conversation results in much more concise and direct responses. When calling the API, although it still outputs an empty pair of "thinking" tags, some processing of the returned string is required, its responses are already quite easy to handle in subsequent processing.
          </span>
          <span leaf="">
           <br/>
@@ -199,7 +199,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          gemma3:12b, I also kept it because it's a multimodal model that can explain images. However, it's a bit annoying when using the API because it often adds some introductory remarks and summaries in its responses. For programmatic calls that only require results (such as translating a short passage), you need to add some instructions and constraints in the prompt to get the desired outcome.
+          gemma3:12b, I also kept it because it is a multimodal model capable of interpreting images. However, it's a bit annoying when using the API, as it often adds some introductory remarks and summaries in its responses. For programmatic calls that only require results (such as translating a short passage), some tuning and restrictions need to be added to the prompt.
          </span>
          <span leaf="">
           <br/>
@@ -208,7 +208,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          deepseek-r1:14b is also retained. Because I will call the DeepSeek API on the cloud as a local reference, mainly to check the differences between the online and offline versions from time to time. It is probably the most verbose model, but after all, it is a pride of China, and keeping it is a matter of sentiment. Once r2 is released, it is likely to be replaced by a version of r2.
+          deepseek-r1:14b is also retained. Because I will call the DeepSeek API in the cloud, using it as a local reference, mainly to check the differences between the online and offline versions from time to time. It's probably the most verbose model, but since it's a pride of China, keeping it is more of an emotional attachment. Once r2 is released, it's likely to be replaced by a version of r2.
          </span>
          <span leaf="">
           <br/>
@@ -231,7 +231,7 @@ html
         </section>
         <section>
          <span leaf="">
-          Processor	AMD Ryzen 9 5950X 16-Core Processor 3.40 GHz
+          Processor	AMD Ryzen 9 5950X 16-Core Processor 	3.40 GHz
          </span>
          <span leaf="">
           <br/>
@@ -249,7 +249,7 @@ html
           <br/>
          </span>
          <span leaf="">
-          Version number	24H2
+          Version Number	24H2
          </span>
          <span leaf="">
           <br/>

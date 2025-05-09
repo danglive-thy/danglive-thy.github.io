@@ -66,7 +66,7 @@ html
         </span>
         <span class="" id="meta_content_hide_info">
          <em class="rich_media_meta rich_media_meta_text" id="publish_time">
-          May 5, 2025 2:32 PM
+          May 05, 2025 14:32
          </em>
          <em aria-labelledby="js_a11y_op_ip_wording js_ip_wording" class="rich_media_meta rich_media_meta_text" id="js_ip_wording_wrp" role="option" style="display: inline-block;">
           <span aria-hidden="true" id="js_a11y_op_ip_wording">
@@ -89,57 +89,57 @@ html
         </section>
         <section>
          <span leaf="">
-          People always want to take the easy way out. If you can create applications by simply dragging and dropping, without having to write any code, who would want to deal with coding? But can low-code platforms really work perfectly in practice, or are they just toys for beginners?
+          People always want to slack off. If they can create applications by dragging and dropping without writing code, who would want to deal with coding? But can low-code platforms truly work perfectly? Or are they just toys for beginners?
          </span>
         </section>
         <section>
          <span leaf="">
-          Going back to six months ago: When I first started learning ESP32 development, I was too lazy to learn Micropython code, so I hoped there was a low-code tool that could let me see what I was doing and get results immediately—just drag and drop a few times and fill in a few parameters to complete the program. However, things didn't go as planned. After trying several domestic and international low-code tools, I found that in the end, the most efficient way was still to go back to PyCharm and Thonny for development.
+          Six months ago: When I first started learning ESP32 development, I was too lazy to learn MicroPython code, so I hoped for some low-code tools that could achieve what-you-see-is-what-you-get—just drag and drop a few times, fill in some parameters, and the program would be ready. However, things didn't go as planned. After trying several low-code tools, both domestic and international, I realized I had to go back to PyCharm and Thonny for development, which turned out to be the most efficient approach.
          </span>
         </section>
         <section>
          <span leaf="">
-          First, low-code tools themselves are black boxes. The generated code has poor readability, making it difficult to understand the underlying logic. Once the functionality does not meet the requirements, debugging is almost impossible, and problem-solving often relies on guesswork. For example, a function that works perfectly in a simulation environment may fail to operate when deployed on an actual SoC, making it very difficult to identify the root cause of the problem.
+          First, low-code tools themselves are black boxes. The compiled code has poor readability—you know what it does but not how it works. If a feature fails to meet requirements, debugging is nearly impossible, and solving the problem often relies on guesswork. For example, a function that works perfectly in a simulated environment might fail when running on an actual SoC, making it extremely difficult to pinpoint the issue.
          </span>
         </section>
         <section>
          <span leaf="">
-          Secondly, learning can only be done through examples, but the number of examples may be too limited. If there are no examples for the desired functionality, one has to search extensively elsewhere, which is time-consuming and laborious.
+          Secondly, learning is only possible through examples, but the number of available examples might be too limited. For desired functionalities, if there are no examples, one has to search everywhere, which is time-consuming and labor-intensive.
          </span>
         </section>
         <section>
          <span leaf="">
-          So after trying it for about 1 or 2 weeks, I still decided to go back to PyCharm and use Tongyi Lingma as my AI coding assistant, which actually proved to be very efficient. Tongyi Lingma claims to have been optimized for IoT code, so I chose it at that time.
+          After working on it for a week or two, I still decided to switch back to PyCharm and use Tongyi Lingma as the AI programming assistant. The efficiency is actually quite high. Tongyi Lingma claims to be optimized for IoT code, which is why I chose it at the time.
          </span>
         </section>
         <section>
          <span leaf="">
-          Of course, when using an AI programming assistant, you still need to have a basic understanding of programming. Otherwise, you won't be able to identify issues in the code provided by the AI. Often, the AI assistant can generate code in just two minutes, but you might spend two days debugging a single problem.
+          Of course, when using an AI programming assistant, you still need to have a foundation in programming. Otherwise, you won't be able to identify issues in the code provided by the AI. Often, the AI assistant can give you code in just 2 minutes, but debugging a particular problem might take you 2 days.
          </span>
         </section>
         <section>
          <span leaf="">
-          The advantages of Vibe coding over using low-code tools become very apparent in two key areas. First, debugging: when problems occur, you can read the code yourself or continuously hand error messages to an AI assistant for resolution, greatly enhancing controllability. Second, there's no need to search anymore—you can directly tell the AI what you need, and it can continuously generate code. Even some libraries that used to require searching can now be written by the AI itself.
+          Vibe coding offers distinct advantages over using low-code tools, particularly in two key aspects. First is debugging—when issues arise, you can either read the code yourself or continuously feed error messages to an AI assistant for resolution, significantly enhancing control. Second, there's no need for searching; simply articulate your requirements to the AI, and it can generate code continuously. Even certain libraries that previously required searching can now be written from scratch.
          </span>
         </section>
         <section>
          <span leaf="">
-          For example, six months ago, I needed a display driver for a digital tube. The libraries on GitHub weren't ideal—there was only a driver for the common cathode connection method of that specific model, and it was written in C. However, my digital tube was common anode, and I needed a version in MicroPython. Rewriting the driver from the C version to Python using an AI assistant was very convenient. However, the AI assistant couldn't understand the change from common cathode to common anode at first, and I had to manually rewrite that part of the logic myself. If the entire project were built on a low-code platform, it would have been even more challenging, as there would be no ready-made libraries or drivers available, and the only solution would have been to switch hardware.
+          For example, half a year ago, I needed a driver for a seven-segment display. The libraries on GitHub weren’t ideal—only drivers for common-cathode connection methods of that specific model were available, and only in C. Mine was a common-anode display, and I needed a MicroPython version. Using an AI assistant to rewrite the C driver code into Python was very convenient. However, the assistant couldn’t grasp the change from common-cathode to common-anode, so I had to rewrite that logic myself. If the entire project had been on a low-code platform, it would have been a dead end—without ready-made libraries or drivers, the only solution would have been to switch hardware.
          </span>
         </section>
         <section>
          <span leaf="">
-          Recently, I tried deploying an LLM locally again and encountered similar issues. At first, I was attracted by various articles recommending dify, coze, and n8n on Xiaohongshu, so I started learning on Bilibili. Regarding dify, the problem began from the very start of deploying with Docker, which was quite frustrating. On my Windows machine's WSL environment, there were always some issues when deploying Docker, probably because it couldn't use the proxy from Windows. When deploying inside Docker, it couldn't connect to the server, so I eventually gave up. Then, many people said that n8n was more mature, and after checking, I found that to be true. So I switched to trying n8n instead.
+          Recently, I tried to deploy an LLM locally and ran into similar issues again. Initially, I was intrigued by various articles on Xiaohongshu recommending Dify, Coze, and N8N, so I started learning about them on Bilibili. The problem with Dify began right from the Docker deployment stage, which was a headache. Due to persistent issues with my Docker setup in the WSL environment on Windows—likely because it couldn’t leverage the proxy settings from Windows—the deployment failed to connect to the server, forcing me to give up. Then, many suggested that N8N is more mature, and after checking it out, I agreed. So, I switched to trying N8N instead.
          </span>
         </section>
         <section>
          <span leaf="">
-          At first, it was indeed pretty perfect. n8n has more than a few hundred pre-built components for integration, making it easy to connect with AI agents and call LLMs deployed locally via Ollama. I did some simple tests and everything worked well. However, as I delved deeper, problems began to arise: when I tried to read a local file in an actual workflow, it started throwing mysterious errors. Adding the "read file" component led to an error related to date-fns. I sent the error message to AI, and it suggested installing the latest version of date-fns globally. Alright, I did that! It seemed to fix the problem? Then, when I added the "extract from file" component, it kept throwing errors again, this time completely without any direction—total disaster. I reinstalled multiple times and even downloaded example workflows from its official website, but the same errors kept occurring.
+          At first, everything seemed perfect. n8n has hundreds of ready-made integrated components, can connect to AI Agents, and is very convenient for calling locally deployed LLMs via ollama. Some simple tests worked well. But as I dug deeper... problems started to emerge. When I needed to read local files in actual workflows, it began throwing inexplicable errors. After adding the "read file" component, it started reporting date-fns errors. I fed the error message to an AI, which suggested I globally install the latest version of date-fns. Okay, did that! Seemed fixed? Then I added the "extract from file" component, and it continued to throw errors—this time with no clue at all, a complete disaster. Multiple reinstallations and downloading sample workflows from the official site all resulted in the same errors.
          </span>
         </section>
         <section>
          <span leaf="">
-          Final realization. I still have to go back to VSCode and let the AI assistant help with programming. It only took one night, and the small tools needed were completed. All the "glue" code, the AI can almost perfectly implement. However, I'm still quite conservative; I usually only use the "smart Q&amp;A" feature of Tongyi Lingma. The code it provides, I usually check myself before copying and pasting. Although the two feature options, "file editing" and "agent," might be more efficient, I'm afraid of messing up the code and ending up with more problems than benefits.
+          Finally came to my senses. It's better to just go back to vscode and let the AI assistant help with programming. In just one evening, the small tool I needed was completed. All the "glue" code can be implemented almost perfectly by the AI. However, I'm still quite conservative—I usually only use the "Smart Q&amp;A" feature of Tongyi Lingma. For the code it provides, I typically review it myself before copying and pasting. Although the "File Edit" and "Smart Agent" features might be more efficient, I'm afraid of messing up the code, which could end up doing more harm than good.
          </span>
         </section>
         <section nodeleaf="" style="text-align: center;">
@@ -147,24 +147,22 @@ html
         </section>
         <section>
          <span leaf="">
-          In contrast, low-code platforms are not actually easy to use. Tools like n8n still require configuring parameters for each component, requiring knowledge of basic JavaScript syntax and JSON. If errors occur, users also need to know how to resolve issues in the installation environment. These fundamental computer skills are unavoidable regardless of the tools or platforms used.
+          In contrast, low-code platforms are not actually low-barrier to use. Tools like n8n still require configuring various parameters for each component, a basic understanding of JavaScript syntax, and familiarity with JSON. When errors occur, users must also know how to troubleshoot issues within the installation environment. These fundamental computer skills are unavoidable, regardless of the tools or platforms used.
          </span>
         </section>
         <section>
          <span leaf="">
-          Then can low-code platforms not be used anymore?
+          Can low-code platforms not be used then?
          </span>
         </section>
         <section>
          <span leaf="">
-          My answer is: Yes, it can still be very useful! First, when you're just starting out, its flowcharts provide a very intuitive understanding of how work processes are organized. They show how a large task can be broken down into smaller components, and these tools have already made very general abstractions. You don't have to figure things out on your own anymore. These abstractions are still very helpful when you're in the "vibe coding" phase, helping you clarify your thoughts.
-
-Second, the large number of examples can inspire learners to create application scenarios that suit their own needs. By considering their own requirements, they can identify which tasks can be automated to greatly improve efficiency. Now that we have this LLM "hammer," looking at what others have already nailed with it is slightly easier than trying to find nails everywhere with just the hammer.
+          My answer is: Yes, it can still be used and remains highly useful! First, when getting started, its flowchart provides a very intuitive understanding of workflow organization—how a large task is broken down into smaller components. These tools have already created highly versatile abstractions, so there's no need to figure it out from scratch. These abstractions are still incredibly helpful for clarifying your thought process during vibe coding. Second, the abundance of examples can inspire learners to create applications tailored to their own scenarios. By combining these with their specific needs, they can identify which tasks can be automated to significantly boost efficiency. Now that we have the "hammer" of LLMs, seeing what "nails" others have hit is always a bit easier than wandering around with a hammer looking for nails to strike.
          </span>
         </section>
         <section>
          <span leaf="">
-          Final thoughts: Currently, the most effective tools are still VSCode or PyCharm, combined with AI assistants like Cline or Tongyi Lingma. Likewise, the most valuable employees remain those who possess both business experience and thinking, along with a background in computer science knowledge — true multidisciplinary talents.
+          Final thought: Currently, the most effective tools are still VSCode or PyCharm, paired with AI assistants like Cline and Tongyi Lingma. The most valuable employees remain versatile individuals with business experience and mindset, coupled with a professional background in computer science.
          </span>
         </section>
         <p style="display: none;">
